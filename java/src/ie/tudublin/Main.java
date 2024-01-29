@@ -43,7 +43,15 @@ public class Main
 
 		m.doCatStuff();
 
-		m.helloProcessing();
+		Cat tommy = new Cat("Tommy");
+		tommy.speak();
+
+		Animal Jamie = new Dog("Jamie");
+		Jamie.speak();
+		Jamie = new Cat("TopCat");
+		Jamie.speak();
+
+		// m.helloProcessing();
 	}
 
 }

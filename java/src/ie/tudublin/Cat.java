@@ -1,8 +1,12 @@
 package ie.tudublin;
 
-public class Cat {
+public class Cat extends Animal {
 
     private int numLives;
+
+    public void speak() {
+        System.out.println("Meow! " + name);
+    }
 
     public int getNumLives() {
         return numLives;
@@ -32,7 +36,8 @@ public class Cat {
         if (numLives > 0) {
             numLives--;
             System.out.println("Ouch!");
-        } else {
+        } 
+        else if(numLives == 0){
             System.out.println("Dead");
         }
     }
