@@ -26,10 +26,10 @@ public class Main
 		// Put your code here
 		System.out.println("cats are from space");
 
-		Cat ginger = new Cat("Ginger");
-		while (ginger.getNumLives() > 0) {
-			ginger.kill();
-		}
+		// Cat ginger = new Cat("Ginger");
+		// while (ginger.getNumLives() > 0) {
+		// 	ginger.kill();
+		// }
 
 	}
 
