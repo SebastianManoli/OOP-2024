@@ -8,13 +8,7 @@ public class Main
 	public void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new HelloProcessing());
-    }
-
-	public void MyFirstProcessing()
-	{
-		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new MyFirstProcessing());
+        processing.core.PApplet.runSketch( a, new Arrays());
     }
 
 	public void doDogStuff()
@@ -49,16 +43,30 @@ public class Main
 
 		m.doCatStuff();
 
-		Cat tommy = new Cat("Tommy");
-		tommy.speak();
+		Dog nuala = new Dog("Nuala");
+		nuala.speak();
 
-		Animal Jamie = new Dog("Jaimee");
-		Jamie.speak();
-		Jamie = new Cat("TopCat");
-		Jamie.speak();
+		Cat atuma = new Cat("Atuma");
+		atuma.speak();
 
-		// m.helloProcessing();
-		m.MyFirstProcessing();
+		Animal larry = new Dog("Larry");
+		larry.speak();
+
+
+		larry = new Cat("TopCat");
+		larry.speak();
+
+		Animal a = new Dog("A");
+		Animal b = new Dog("B");
+		Animal c = a;
+		a.setName("G");
+
+		System.out.println(a.getName());
+		System.out.println("C: " + c.getName());
+		
+
+
+		m.helloProcessing();
 	}
 
 }
